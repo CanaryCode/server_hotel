@@ -15,7 +15,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-    Stage PrimarStage = stage;
+        Stage PrimarStage = stage;
         AnchorPane root = FXMLLoader.load(getClass().getResource("/fxml/VPrincipal.fxml"));
         stage.initStyle(StageStyle.DECORATED);
         stage.centerOnScreen();

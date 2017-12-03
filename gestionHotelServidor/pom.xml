@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>dam.gestionhotelservidor.MainApp</mainClass>
+        <mainClass>dam.gestionhotelera.MainApp</mainClass>
     </properties>
 
     <organization>
