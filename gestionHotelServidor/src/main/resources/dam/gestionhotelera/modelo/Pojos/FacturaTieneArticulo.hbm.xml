@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-dic-2017 19:50:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="dam.gestionhotelera.modelo.Pojos.FacturaTieneArticulo" table="factura_tiene_articulo" catalog="hosteleria" optimistic-lock="version">
+        <id name="idFacturaTieneArticulocol" type="java.lang.Integer">
+            <column name="idFactura_tiene_Articulocol" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="articulo" class="dam.gestionhotelera.modelo.Pojos.Articulo" fetch="select">
+            <column name="Articulo_idArticulo" not-null="true" />
+        </many-to-one>
+        <many-to-one name="factura" class="dam.gestionhotelera.modelo.Pojos.Factura" fetch="select">
+            <column name="Factura_idFactura" not-null="true" />
+        </many-to-one>
+        <property name="fecha" type="timestamp">
+            <column name="fecha" length="19" />
+        </property>
+        <property name="precio" type="java.lang.Double">
+            <column name="precio" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
